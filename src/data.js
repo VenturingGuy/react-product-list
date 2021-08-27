@@ -6,12 +6,12 @@ const allCategories = data.map(obj => obj.category) // maps category json data i
 const categoryObjects = allCategories.reduce((obj, cat) => {
     obj[cat] = 0
     return obj
-  }, {}) // !!! Be sure to define the initial value as an Object!
-  // Make an arr array of the keys
+  }, {})
+  // Makes an array of the keys
   const categoriesUnique = Object.keys(categoryObjects)
 
-const categoriesWithCounts = data.reduce((obj, cat) => {
-  if (obj[cat] === "undefined") {
+const categoriesWithCounts = allCategories.reduce((obj, cat) => {
+  if (obj[cat] === undefined) {
     obj[cat] = 1
   }
   else {
@@ -20,6 +20,10 @@ const categoriesWithCounts = data.reduce((obj, cat) => {
   return obj
 }, {})
 
-console.log(data)
+const namesAndCategories = categoriesUnique.map(name => {
+  // returns an object with the name and count
+  return { name, count: categoriesWithCounts[name]}
+})
 
 export default data // export the native JS array
+export {allCategories, categoriesUnique, categoriesWithCounts, namesAndCategories}

@@ -1,5 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import data, { allCategories, categoriesUnique, categoriesWithCounts, namesAndCategories } from './data';
+
+console.log(data)
+console.log(allCategories)
+console.log(categoriesUnique)
+console.log(categoriesWithCounts)
+console.log(namesAndCategories)
 
 function App() {
   return (
