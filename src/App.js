@@ -1,12 +1,15 @@
-import logo from './logo.svg';
+
 import './App.css';
-import data, { allCategories, categoriesUnique, categoriesWithCounts, namesAndCategories } from './data';
+import data, { allCategories, categoriesUnique, categoriesWithCounts, namesAndCategories, namesAndPrices, ratingAverage, toyProducts } from './data';
 
 console.log(data)
 console.log(allCategories)
 console.log(categoriesUnique)
 console.log(categoriesWithCounts)
 console.log(namesAndCategories)
+console.log(namesAndPrices)
+console.log(toyProducts)
+console.log(ratingAverage)
 
 function App() {
   return (
