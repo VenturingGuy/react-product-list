@@ -1,0 +1,14 @@
+.CategoryList {
+  display: flex;
+  flex-wrap: wrap;
+}
+.CategoryList > button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem 0.2rem;
+  border-style: solid;
+  border-width: 0.15rem;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=CategoryList.css.map */

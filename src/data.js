@@ -1,8 +1,6 @@
 import data from './data.json' // imports data.json
 
 const allCategories = data.map(obj => obj.category) // maps category json data into array
-const allNames = data.map(obj => obj.name) // maps name json data into array
-const allPrices = data.map(obj => obj.price)
 
 // Make an object where each key is a category name
 const categoryObjects = allCategories.reduce((obj, cat) => {

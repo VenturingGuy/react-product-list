@@ -1,7 +1,8 @@
 
 import './App.css';
 import data, { allCategories, categoriesUnique, categoriesWithCounts, namesAndCategories, namesAndPrices, ratingAverage, toyProducts } from './data';
-
+import ProductList from './ProductList'
+import CategoryList from './CategoryList'
 console.log(data)
 console.log(allCategories)
 console.log(categoriesUnique)
@@ -17,13 +18,8 @@ function App() {
       <h1>Products</h1>
       <h2>Product Count: {data.length}</h2>
       <h2>Cateogry Count: {categoriesUnique.length}</h2>
-        {namesAndCategories.map(obj => {
-          return (
-            <button>
-              {obj.name}
-            </button>
-          )
-        })}
+      <CategoryList />
+      <ProductList />
     </div>
   );
 }
