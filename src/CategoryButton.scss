@@ -16,4 +16,12 @@ button {
     &.ChosenCategory {
         background-color: rgb(102, 176, 206);
     }
+
+    span {
+        margin: 0 .2rem;
+        padding: .3rem .6rem;
+        border-radius: 100%;
+        background-color: rgb(159, 141, 192);
+    }
 }
+

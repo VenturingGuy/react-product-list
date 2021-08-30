@@ -10,7 +10,7 @@ function CategoryButton(props) {
                 onClick={() => onClick(category)}
             >
                 {category}
-                    <span> {count}</span>
+                    <span>{count}</span>
             </button>
         </div>
     )

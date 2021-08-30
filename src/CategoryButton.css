@@ -15,5 +15,11 @@ button:hover {
 button.ChosenCategory {
   background-color: #66b0ce;
 }
+button span {
+  margin: 0 0.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 100%;
+  background-color: #9f8dc0;
+}
 
 /*# sourceMappingURL=CategoryButton.css.map */

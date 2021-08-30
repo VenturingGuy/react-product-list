@@ -4,6 +4,7 @@ import data, { allCategories, categoriesUnique, categoriesWithCounts, namesAndCa
 import ProductList from './ProductList'
 import CategoryList from './CategoryList'
 import Header from './Header'
+import Inventory from './Inventory';
 
 import { useState } from 'react'
 
@@ -30,6 +31,7 @@ function App() {
         onClick={newCategory => setCategory(newCategory)}
         />
       <ProductList category={category}/>
+      <Inventory />
     </div>
   );
 }
