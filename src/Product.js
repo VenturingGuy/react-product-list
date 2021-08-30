@@ -6,7 +6,7 @@ function Product(props) {
             <p>{description}</p>
             <p>Price: {price}</p>
             <p>Category: {category}</p>
-            <small>Rating: {rating}</small>
+            <small>Rating: {Math.round(rating)}</small>
         </div>
     )
 }

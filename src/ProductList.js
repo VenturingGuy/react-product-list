@@ -9,13 +9,7 @@ function ProductList(props) {
             {data.filter(obj => 
                 obj.category === category || category === 'All').map(obj => {
             return (
-                <Product 
-                name={obj.name}
-                description={obj.description}
-                price={obj.price}
-                category={obj.category}
-                rating={obj.rating}
-                />
+                <Product {...obj}/>
             )
         })}
         </div>
