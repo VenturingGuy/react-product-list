@@ -23,6 +23,7 @@ body {
 body .App {
   background-color: #eef2ff;
   width: 90%;
+  min-height: 100vh;
   margin: 0 5%;
   padding: 3% 10%;
 }

@@ -1,14 +1,20 @@
 import { namesAndCategories } from "./data"
 import './CategoryList.css'
-function CategoryList() {
+import CategoryButton from "./CategoryButton"
+
+function CategoryList(props) {
+    const { category, onClick } = props
     return (
-        <div className="CategoryList">  
+        <div className="CategoryList">
             {namesAndCategories.map(obj => {
+                const className = obj.name === category ? 'ChosenCategory' : ''
             return (
-                <button>
-                {obj.name}
-                    <span> {obj.count} </span>
-                </button>
+                <CategoryButton
+                    className={className}
+                    category={obj.name}
+                    count={obj.count}
+                    onClick={onClick}
+                />
             )
             })}
         </div>

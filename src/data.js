@@ -25,6 +25,8 @@ const namesAndCategories = categoriesUnique.map(name => {
   return { name, count: categoriesWithCounts[name]}
 })
 
+namesAndCategories.push({name: 'All', count: data.length})
+
 const namesAndPrices = data.map(obj => { 
   return `${obj.name}: ${obj.price}`
 })

@@ -1,13 +1,4 @@
 .CategoryList {
     display: flex;
     flex-wrap: wrap;
-
-    > button {
-        font-size: 1rem;
-        padding: .5rem 1rem;
-        margin: .5rem .2rem;
-        border-style: solid;
-        border-width: .15rem;
-        border-radius: .5rem;
-    }
 }
